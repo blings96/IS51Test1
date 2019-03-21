@@ -14,6 +14,12 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.aboutText = 'This application is designed by Boris Billings. (C) 2019';
+  }
+
+  openAboutModal() {
+   // alert(this.aboutText);
+    this.flexModal.openDialog('about-modal');
   }
 
 
